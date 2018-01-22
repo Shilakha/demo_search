@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Login Functionality",
+        "description": "",
+        "id": "search-automation;login-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22381630559,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user navigates to https://www.molnlycke.com/",
+            "match": {
+              "location": "Steps.user_navigates_to_https_www_molnlycke_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 466514939,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on I agree button",
+            "match": {
+              "location": "Steps.user_clicks_on_I_agree_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 35596159,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies title",
+            "match": {
+              "location": "Steps.user_verifies_title()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8044914133,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on search button",
+            "match": {
+              "location": "Steps.user_clicks_on_search_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Search"
+          }
+        ]
+      }
+    ],
+    "name": "Search automation",
+    "description": "Description: This feature will test the search functionality",
+    "id": "search-automation",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]

@@ -1,7 +1,7 @@
 Feature: Search functionality validation 
-	Description: This feature will validate the search functionality for molnlycke site
+	Description: This feature will validate the search functionality for molnlycke site.
 
-@Search 
+@Search_for_Mölnlycke_site
 Scenario Outline: Search Functionality 
 	Given user navigates to "<url>" 
 	When user verifies the heading "<heading>" 

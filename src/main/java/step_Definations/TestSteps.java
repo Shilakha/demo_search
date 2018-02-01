@@ -45,7 +45,7 @@ public class TestSteps {
 	
 	public void user_clicks_on_search() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		WebElement e = driver.findElement(By.xpath("//button[@id='open-search-takeover']"));
 		e.click();
 	}
@@ -67,7 +67,7 @@ public class TestSteps {
 	
 	public void user_enters_the_product_to_be_searched(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@id='Search']")).sendKeys(arg1);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 	}
@@ -89,7 +89,7 @@ public class TestSteps {
 	
 	public void user_verifies_the_records_count(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		String actualCount = driver.findElement(By.xpath("//div/p[@class=\"search-result-hitcount\"]")).getText();
 		String expectedCount = arg1;
 		assertEquals(expectedCount, actualCount);
@@ -101,7 +101,7 @@ public class TestSteps {
 	
 	public void user_clicks_on_searchlink(String arg1) throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		WebDriverWait wait = new WebDriverWait(driver, 80);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(), \"Biogel gloves\")]")));
 		driver.findElement(By.xpath(
